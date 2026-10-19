@@ -3,341 +3,564 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Abdlh ff - آخر أخبار وتحديثات لعبة Free Fire وأحداثها ونصائح اللاعبين.">
-<title>Abdlh ff | أخبار فري فاير</title>
-
-<!-- ===== Google AdSense ===== -->
+<meta name="description" content="حمّل تطبيق Abdlh ff واربح النقاط من الإعلانات والمهمات، وشارك رابطك الخاص لتربح 5 نقاط عن كل شخص يحمّل التطبيق من خلالك.">
+<meta property="og:title" content="Abdlh ff | حمّل التطبيق واربح النقاط">
+<meta property="og:description" content="كل شخص يحمّل التطبيق من رابطك = 5 نقاط داخل التطبيق.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo.png">
 <meta name="google-adsense-account" content="ca-pub-8541964070571808">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8541964070571808"
-     crossorigin="anonymous"></script>
+<title>Abdlh ff | تحميل التطبيق وربح النقاط</title>
+<link rel="icon" href="logo.png" type="image/png">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8541964070571808" crossorigin="anonymous"></script>
 
 <script>
-/* ==========================================================
-   إعدادات الإعلانات — عدّل هذا السطر فقط:
-   بعد قبول حسابك في AdSense، أنشئ وحدة إعلانية وانسخ رقمها
-   بين علامتي التنصيص في AD_SLOT  (مثال: "1234567890")
-   ما دام AD_SLOT فارغاً، ستبقى المواضع مخفية ويعمل Auto Ads.
-   ========================================================== */
 var AD_CLIENT = "ca-pub-8541964070571808";
-var AD_SLOT   = "";
+var AD_SLOT   = "1018274983";
+var AD_SLOT_MX = "7653720118";
 </script>
 
 <style>
+:root{
+  --bg:#06101f; --card:#0e2240; --card2:#112a4e;
+  --line:#22456f; --gold:#ffc857; --gold2:#ffe09a;
+  --text:#eef6ff; --muted:#a9c2df; --green:#40d48a;
+}
 *{box-sizing:border-box}
-body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:#071329;color:#fff;line-height:1.7;margin:0}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:var(--bg);
+  color:var(--text);line-height:1.8;overflow-x:hidden;
+}
+a{color:var(--gold);text-decoration:none}
+a:hover{color:var(--gold2)}
+img{max-width:100%}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
 header{
-display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;
-padding:15px 5%;
-background:#061020;
-border-bottom:2px solid #168cff;
+  position:sticky;top:0;z-index:20;background:rgba(6,16,31,.92);
+  backdrop-filter:blur(10px);border-bottom:1px solid #17375c;
 }
-.logo{font-size:30px;font-weight:900;color:#ffc857}
-nav a{color:white;text-decoration:none;margin:0 8px;font-size:14px;}
-nav a:hover{color:#ffc857}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:21px;color:#fff}
+.brand img{width:40px;height:40px;border-radius:11px;box-shadow:0 0 22px rgba(255,200,87,.25)}
+.brand span{color:var(--gold)}
+nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+nav a{color:#d7e7fa;font-weight:600}
+nav a:hover{color:var(--gold)}
 .hero{
-text-align:center;padding:65px 20px;
-background:radial-gradient(ellipse at top,#174b91,transparent 75%);
+  position:relative;padding:64px 0 52px;text-align:center;overflow:hidden;
+  background:
+    radial-gradient(ellipse at 50% -10%,rgba(51,161,255,.30),transparent 60%),
+    radial-gradient(ellipse at 85% 30%,rgba(255,200,87,.13),transparent 55%);
 }
-.tag{display:inline-block;border:1px solid #4b91d7;border-radius:30px;padding:5px 15px;color:#cde8ff;}
-h1{font-size:clamp(32px,6vw,55px);line-height:1.3}
-h1 span{color:#ffc857}
-.hero p{max-width:700px;margin:15px auto 25px;color:#c2d4ee}
+.hero::after{
+  content:"";position:absolute;inset:auto 0 0;height:120px;
+  background:linear-gradient(transparent,var(--bg));pointer-events:none;
+}
+.hero-logo{
+  width:124px;height:124px;border-radius:28px;border:2px solid rgba(255,200,87,.5);
+  box-shadow:0 18px 60px rgba(0,0,0,.55),0 0 45px rgba(255,200,87,.22);
+  animation:float 5s ease-in-out infinite;background:#0b1c33;
+}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.tagline{
+  display:inline-block;margin:22px 0 6px;padding:5px 16px;border-radius:30px;
+  border:1px solid #2d5f93;background:rgba(20,52,88,.55);color:#cfe6ff;font-size:13px;
+}
+h1{font-size:clamp(32px,6vw,54px);line-height:1.25;margin:8px 0 12px;font-weight:900}
+h1 span{color:var(--gold)}
+.hero p.lead{max-width:700px;margin:0 auto 26px;color:var(--muted);font-size:17px}
+.cta-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
 .btn{
-display:inline-block;background:#ffc857;color:#071329;
-padding:12px 23px;border-radius:10px;text-decoration:none;
-font-weight:bold;margin:5px;transition:.2s;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border:0;border-radius:13px;padding:14px 25px;font-weight:900;font-size:17px;
+  font-family:inherit;cursor:pointer;text-decoration:none;transition:.2s;
 }
-.btn:hover{background:#ffdf8a;transform:translateY(-2px)}
-main{max-width:1100px;margin:auto;padding:25px 5% 60px}
-h2{border-right:5px solid #ffc857;padding-right:12px;color:#fff;}
-h3{color:#ffc857}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;}
+.btn-gold{
+  background:linear-gradient(180deg,#ffd97a,#ffc857);color:#081626;
+  box-shadow:0 10px 30px rgba(255,200,87,.28);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(255,200,87,.36);color:#081626}
+.btn-ghost{
+  background:rgba(19,48,83,.65);color:#e7f3ff;border:1px solid #2d5f93;
+}
+.btn-ghost:hover{background:#173e69;transform:translateY(-2px);color:#fff}
+.small-note{color:#8faac8;font-size:12px;margin-top:12px}
+.ref-banner{
+  display:none;max-width:760px;margin:26px auto 0;padding:14px 18px;border-radius:14px;
+  background:linear-gradient(135deg,rgba(64,212,138,.16),rgba(51,161,255,.13));
+  border:1px solid rgba(64,212,138,.45);color:#dfffee;font-size:14px;text-align:right;
+}
+.ref-banner.show{display:block;animation:pop .35s ease}
+.ref-banner b{color:#8dffbf}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+main{padding:10px 0 40px}
+section{padding:34px 0}
+h2{font-size:clamp(23px,3.4vw,32px);margin:0 0 8px;line-height:1.4}
+h2 .ic{color:var(--gold)}
+.sec-sub{color:var(--muted);margin:0 0 22px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .card{
-background:linear-gradient(145deg,#142e55,#0c1d38);
-border:1px solid #28466e;border-radius:16px;
-padding:22px;margin:15px 0;
+  background:linear-gradient(150deg,var(--card2),var(--card));
+  border:1px solid var(--line);border-radius:17px;padding:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.18);
 }
-.card p{color:#c2d4ee}
-.article{
-background:linear-gradient(145deg,#102447,#0b1b34);
-border:1px solid #28466e;border-radius:16px;
-padding:25px;margin:20px 0;
+.card .ico{font-size:30px;line-height:1;margin-bottom:10px}
+.card h3{margin:0 0 7px;font-size:18px;color:#fff}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;counter-reset:st}
+.step{
+  position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:22px 18px 18px;
 }
-.article p,.article li{color:#d3def0}
-.article li{margin:8px 0}
-.ad{margin:30px 0;text-align:center}
-.ad-label{font-size:11px;color:#6f88ab;letter-spacing:1px;margin-bottom:6px}
-.download{
-text-align:center;padding:25px;background:#102447;
-border:1px solid #28466e;border-radius:15px;margin:25px 0;
+.step::before{
+  counter-increment:st;content:counter(st);position:absolute;top:-14px;right:16px;
+  width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
+  background:var(--gold);color:#081626;font-weight:900;font-size:16px;
+  box-shadow:0 6px 16px rgba(255,200,87,.3);
 }
+.step h3{margin:6px 0;font-size:17px}
+.step p{margin:0;color:var(--muted);font-size:14px}
+.download-card{
+  margin-top:8px;background:
+    radial-gradient(ellipse at 10% 0%,rgba(255,200,87,.17),transparent 55%),
+    linear-gradient(150deg,#13335c,#0b1e39);
+  border:1px solid #2f5f94;border-radius:22px;padding:28px;text-align:center;
+}
+.download-card h2{margin-bottom:6px}
+.download-card .meta{color:var(--muted);font-size:14px;margin-bottom:20px}
+.share-box{
+  display:flex;gap:8px;max-width:720px;margin:18px auto 0;flex-wrap:wrap;
+}
+.share-box input{
+  flex:1;min-width:230px;direction:ltr;text-align:center;background:#081a30;
+  border:1px solid #2d5f93;border-radius:12px;color:#d9ecff;padding:12px 14px;
+  font-family:inherit;font-size:13px;
+}
+.share-box button{padding:12px 20px;font-size:15px;border-radius:12px}
+.status-line{min-height:22px;font-size:13px;margin-top:10px;color:var(--green)}
+.status-line.err{color:#ff9b83}
+.status-line.info{color:#a9c2df}
+.note{
+  border-right:4px solid var(--gold);background:rgba(255,200,87,.07);
+  padding:13px 16px;border-radius:10px;color:#f1e3bc;font-size:14px;margin-top:16px;
+}
+.faq{display:grid;gap:10px}
+details{
+  background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 16px;
+}
+summary{cursor:pointer;font-weight:800;color:#fff;outline:none}
+details p{color:var(--muted);margin:10px 0 0;font-size:14px}
+.ad{text-align:center;margin:26px 0}
+.ad-label{font-size:11px;color:#6e88a7;letter-spacing:1px;margin-bottom:5px}
 footer{
-text-align:center;padding:25px;color:#91a7c6;
-border-top:1px solid #1b365a;
+  border-top:1px solid #17375c;padding:28px 0 40px;color:#8faac8;font-size:13px;text-align:center;
 }
+footer .fbrand{color:var(--gold);font-weight:900;font-size:17px;margin-bottom:6px}
+.toast{
+  position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);
+  background:#0d2b4d;border:1px solid #2f6da3;color:#eaf6ff;padding:11px 20px;
+  border-radius:30px;font-size:14px;box-shadow:0 12px 30px rgba(0,0,0,.45);
+  opacity:0;pointer-events:none;transition:.25s;z-index:60;max-width:90vw;text-align:center;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:600px){
-header{flex-direction:column;gap:8px;text-align:center}
-.hero{padding:45px 15px}
+  .nav{gap:8px;justify-content:center}
+  nav{gap:10px;font-size:13px}
+  .hero{padding:42px 0 40px}
+  .hero-logo{width:100px;height:100px;border-radius:24px}
+  .btn{width:100%}
+  .cta-row{flex-direction:column}
+  .download-card{padding:20px 15px}
 }
 </style>
 </head>
 
 <body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8541964070571808"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-8541964070571808"
-     data-ad-slot="7653720118"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 <header>
-<div class="logo">🔥 Abdlh ff</div>
-<nav>
-<a href="#home">الرئيسية</a>
-<a href="#news">الأخبار</a>
-<a href="#article">المقال</a>
-<a href="#updates">التحديثات</a>
-<a href="#download">تحميل اللعبة</a>
-</nav>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="logo.png" alt="Abdlh ff"><div>Abdlh <span>ff</span></div></a>
+    <nav>
+      <a href="#download">تحميل التطبيق</a>
+      <a href="#features">المميزات</a>
+      <a href="#referral">اربح 5 نقاط</a>
+      <a href="#faq">أسئلة شائعة</a>
+    </nav>
+  </div>
 </header>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8541964070571808"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-ef+6k-30-ac+ty"
-     data-ad-client="ca-pub-8541964070571808"
-     data-ad-slot="9321280144"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<section class="hero" id="home">
-<span class="tag">🎮 عالم فري فاير بين يديك</span>
-<h1>مرحبًا بك في <span>Abdlh ff</span></h1>
-<p>
-اكتشف عالم Free Fire المليء بالحماس والتحديات!
-تابع آخر الأخبار والتحديثات والأحداث، واستعد لخوض معارك البقاء.
-</p>
-<a class="btn" href="#news">📰 اكتشف الأخبار</a>
-<a class="btn" href="#download">📥 تحميل اللعبة</a>
-</section>
 
-<main>
+<div class="hero" id="top">
+  <div class="wrap">
+    <img class="hero-logo" src="logo.png" alt="شعار تطبيق Abdlh ff">
+    <div class="tagline">🎮 تطبيق النقاط والجواهر لعشاق Free Fire</div>
+    <h1>حمّل <span>Abdlh ff</span><br>واربح النقاط من كل مكان</h1>
+    <p class="lead">
+      شاهد الإعلانات، أنجز المهمات، واستلم هديتك اليومية. وشارك رابطك الخاص:
+      كل شخص يحمّل التطبيق من خلال رابطك تربح <b style="color:var(--gold)">5 نقاط</b> داخل التطبيق.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-gold" id="downloadHero" href="abdlh-ff.apk" download>⬇️ تحميل التطبيق الآن</a>
+      <a class="btn btn-ghost" href="#referral">🔗 كيف تربح من رابطك؟</a>
+    </div>
+    <div class="small-note">الإصدار 1.4 · أندرويد 8.0 أو أحدث · تحميل مباشر وآمن</div>
 
-<!-- ===== الموضع الإعلاني 1: تحت الهيدر مباشرة ===== -->
-<div class="ad">
-<div class="ad-label">إعلان</div>
+    <div class="ref-banner" id="refBanner">
+      🎁 وصلت عبر دعوة من صديق! حمّل التطبيق الآن — صاحب الرابط سيحصل على
+      <b>5 نقاط</b> عند فتح التطبيق.
+    </div>
+  </div>
 </div>
 
-<section id="news">
-<h2>📰 آخر الأخبار</h2>
+<main class="wrap">
 
-<div class="grid">
+  <div class="ad"><div class="ad-label">إعلان</div></div>
 
-<div class="card">
-<h3>🎮 أخبار اللعبة</h3>
-<p>
-تابع أخبار Free Fire وتعرّف على المستجدات والتغييرات التي تطرأ على اللعبة.
-</p>
-</div>
+  <section id="features">
+    <h2><span class="ic">✨</span> ماذا يقدّم لك التطبيق؟</h2>
+    <p class="sec-sub">كل شيء واضح وبسيط داخل التطبيق — اربح نقاطاً واستعملها في خانات الجواهر.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ico">📺</div>
+        <h3>إعلانات مكافأة</h3>
+        <p>شاهد الإعلان كاملاً واربح 5 نقاط للإعلان العادي و10 نقاط لإعلان المور.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🎁</div>
+        <h3>هدية يومية</h3>
+        <p>ادخل كل يوم واستلم هديتك اليومية وراكم نقاطك بدون تعقيد.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🎯</div>
+        <h3>مهمات ومشاهدة</h3>
+        <p>مهمات القنوات ومشاهدة الفيديوهات تمنحك نقاطاً إضافية على رصيدك.</p>
+      </div>
+      <div class="card">
+        <div class="ico">💎</div>
+        <h3>خانات الجواهر</h3>
+        <p>حوّل نقاطك إلى عروض جواهر داخل التطبيق حسب الخانة المتاحة لك.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🤝</div>
+        <h3>رابط الإحالة</h3>
+        <p>من تبويب المهمات انسخ رابطك الخاص وشاركه — كل تحميل جديد = 5 نقاط لك.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🌙</div>
+        <h3>وضوح وراحة</h3>
+        <p>واجهة عربية، وضع ليلي، ومتابعة رصيدك ونشاطك خطوة بخطوة.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>🎁 الأحداث والمكافآت</h3>
-<p>
-اكتشف الفعاليات والمكافآت داخل اللعبة وتابع تفاصيل الأحداث الجديدة.
-</p>
-</div>
+  <section id="referral">
+    <h2><span class="ic">🔗</span> نظام الإحالة: 5 نقاط عن كل تحميل</h2>
+    <p class="sec-sub">أنت داخل التطبيق؟ اذهب إلى <b>المهمات</b> ← <b>شارك رابط التطبيق</b>، وانسخ رابطك الخاص.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>انسخ رابطك</h3>
+        <p>رابط خاص بك فقط، يظهر داخل التطبيق في تبويب المهمات.</p>
+      </div>
+      <div class="step">
+        <h3>شاركه مع أصدقائك</h3>
+        <p>انشره في واتساب، فيسبوك، تيليغرام أو أي مكان تريد.</p>
+      </div>
+      <div class="step">
+        <h3>صديقك يحمّل التطبيق</h3>
+        <p>كل شخص يفتح رابطك ويحمّل التطبيق من الموقع يُحتسب لك تلقائياً.</p>
+      </div>
+      <div class="step">
+        <h3>تربح 5 نقاط</h3>
+        <p>تُضاف النقاط إلى رصيدك داخل التطبيق مباشرة عند فتحه. نسخ رابطك أيضاً = +5 مرة يومياً.</p>
+      </div>
+    </div>
+    <div class="note">
+      💡 الرابط يجب أن يكون رابط الإحالة الخاص بك القادم من التطبيق (فيه <span dir="ltr">?ref=</span>).
+      الروابط العادية تُحمّل التطبيق لكن لا تُضيف نقاطاً لأي شخص.
+    </div>
+  </section>
 
-<div class="card">
-<h3>🛠️ نصائح اللاعبين</h3>
-<p>
-طوّر مهاراتك في التصويب والتحرك، وتعلم استراتيجيات تساعدك على خوض المعارك.
-</p>
-</div>
+  <div class="ad"><div class="ad-label">إعلان</div></div>
 
-</div>
-</section>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8541964070571808"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-8541964070571808"
-     data-ad-slot="5232852168"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- ===== الموضع الإعلاني 2: منتصف المحتوى ===== -->
-<div class="ad">
-<div class="ad-label">إعلان</div>
-</div>
+  <section id="download">
+    <div class="download-card">
+      <h2><span class="ic">⬇️</span> حمّل Abdlh ff الآن</h2>
+      <div class="meta">الإصدار 1.4 · حجم تقريباً 10 ميغابايت · أندرويد 8.0+ · تثبيت مباشر من الموقع</div>
+      <div class="cta-row">
+        <a class="btn btn-gold" id="downloadMain" href="abdlh-ff.apk" download>📥 تحميل APK مباشرة</a>
+      </div>
+      <div class="share-box">
+        <input id="shareUrl" type="text" readonly value="https://mohainfo200-star.github.io/abdlh-ff48/">
+        <button class="btn btn-ghost" id="copyBtn" type="button">📋 نسخ الرابط</button>
+      </div>
+      <div class="status-line" id="statusLine"></div>
+      <div class="small-note">
+        بعد التحميل: افتح الملف من إشعارات الهاتف، واسمح بتثبيت التطبيقات من هذا المصدر إن طُلب منك ذلك.
+      </div>
+    </div>
+  </section>
 
-<section id="article" class="article">
+  <section id="faq">
+    <h2><span class="ic">❓</span> أسئلة شائعة</h2>
+    <div class="faq">
+      <details open>
+        <summary>كيف تربح النقاط داخل التطبيق؟</summary>
+        <p>من خلال الإعلانات المكافأة، الهدية اليومية، المهمات ومشاهدة الفيديوهات، وروابط الإحالة. تجد كل شيء داخل التبويبات المخصصة له.</p>
+      </details>
+      <details>
+        <summary>كيف تعمل نقاط الإحالة بالضبط؟</summary>
+        <p>من داخل التطبيق، تبويب المهمات، انسخ رابطك الخاص وشاركه. كل شخص يفتح رابطك ويحمّل التطبيق من هذا الموقع يُسجَّل لك، وتُضاف 5 نقاط إلى رصيدك عند فتح التطبيق لاحقاً.</p>
+      </details>
+      <details>
+        <summary>هل التطبيق موجود في Google Play؟</summary>
+        <p>حالياً التحميل مباشر من هذا الموقع. نسخة Google Play ستكون متاحة مستقبلاً إن شاء الله.</p>
+      </details>
+      <details>
+        <summary>هل تحميل التطبيق مجاني؟</summary>
+        <p>نعم، التحميل واستعمال التطبيق مجاني. النقاط تُكتسب من الأنشطة داخل التطبيق.</p>
+      </details>
+      <details>
+        <summary>لماذا لا تظهر نقاط الإحالة مباشرة؟</summary>
+        <p>بعد تحميل صديقك، افتح التطبيق وأنت متصل بالإنترنت. يقوم التطبيق بجلب التحميلات الجديدة وإضافة 5 نقاط لكل تحميل تلقائياً.</p>
+      </details>
+      <details>
+        <summary>هل هذا التطبيق تابع لشركة Garena؟</summary>
+        <p>لا. Abdlh ff تطبيق مستقل من تطوير صاحب المشروع، وغير تابع رسمياً لشركة Garena أو لعبة Free Fire. جميع العلامات التجارية لأصحابها.</p>
+      </details>
+    </div>
+  </section>
 
-<h2>🔥 Free Fire: ادخل ساحة المعركة، قاتل حتى النهاية واصنع أسطورتك!</h2>
-
-<p>
-هل أنت مستعد لخوض واحدة من أكثر مغامرات البقاء إثارة على الهاتف؟ مرحبًا بك في عالم <strong>Free Fire</strong>، اللعبة التي تجمع بين الحماس والتحدي والسرعة والذكاء في معارك لا تعرف الاستسلام! هنا، كل ثانية تصنع الفرق، وكل قرار قد يحدد مصيرك، وكل مواجهة تمنحك فرصة جديدة لإثبات مهاراتك.
-</p>
-
-<p>
-تأخذك فري فاير إلى جزيرة مليئة بالمخاطر والمنافسين، حيث تبدأ رحلتك بالقفز من الطائرة واختيار مكان الهبوط المناسب، ثم البحث عن الأسلحة والمعدات وجمع الموارد الضرورية للبقاء. ومع تقلص المنطقة الآمنة، تزداد المواجهات اشتعالًا، ويصبح عليك التحرك بحذر، والتخطيط بذكاء، والاستعداد لأي عدو قد يظهر أمامك.
-</p>
-
-<h3>⚔️ معارك سريعة ومليئة بالإثارة</h3>
-
-<p>
-تتميز Free Fire بمباريات سريعة تناسب عشاق الأكشن والتحدي. يمكنك خوض معارك البقاء بمفردك أو تشكيل فريق مع أصدقائك والتعاون لتحقيق الانتصار. لا يتعلق الأمر بالقوة وحدها، بل بقدرتك على اتخاذ القرارات المناسبة في اللحظات الحاسمة، واختيار السلاح الملائم، واستغلال البيئة لصالحك.
-</p>
-
-<h3>🛡️ كوّن فريقك وواجه التحديات</h3>
-
-<p>
-هل تفضل القتال الفردي أم اللعب الجماعي؟ في فري فاير، يمكنك تشكيل فريق يصل إلى أربعة لاعبين والتواصل معهم أثناء المعركة. تعاون مع زملائك، وغطِّ تحركاتهم، وساعدهم عند الحاجة، وواجهوا الخصوم بخطة مشتركة. فالفريق المتفاهم يستطيع تحويل أصعب المواقف إلى فرص جديدة للفوز.
-</p>
-
-<h3>🎯 طوّر مهاراتك واصنع أسلوبك الخاص</h3>
-
-<p>
-اكتشف مجموعة متنوعة من الأسلحة والشخصيات والقدرات، وجرّب استراتيجيات مختلفة حتى تجد أسلوب اللعب الذي يناسبك. تدرب على التصويب، وحسّن سرعة رد فعلك، وتعلم اختيار أماكن الهبوط والتحرك داخل الخريطة. كل مباراة تمنحك تجربة جديدة وفرصة لتطوير مستواك.
-</p>
-
-<h3>🏆 كلاش سكواد: تحدٍّ بين فريقين</h3>
-
-<p>
-إذا كنت من محبي المواجهات المباشرة، فإن وضع Clash Squad يمنحك فرصة خوض معارك جماعية بنظام أربعة ضد أربعة. اشترِ الأسلحة المناسبة، ونسّق مع فريقك، وواجه الخصم في جولات تتطلب التركيز وسرعة اتخاذ القرار. هنا، التعاون والتكتيك يصنعان أجواء تنافسية مليئة بالحماس.
-</p>
-
-<h3>🌟 لماذا تستحق Free Fire التجربة؟</h3>
-
-<ul>
-<li>مباريات سريعة ومليئة بالتحديات.</li>
-<li>أوضاع لعب متنوعة بين البقاء والمواجهات الجماعية.</li>
-<li>إمكانية اللعب مع الأصدقاء والتواصل داخل اللعبة.</li>
-<li>شخصيات وقدرات وأسلحة متنوعة.</li>
-<li>أحداث ومكافآت وتحديثات تضيف تجارب جديدة.</li>
-</ul>
-
-<h3>🔥 هل أنت مستعد للانطلاق؟</h3>
-
-<p>
-استعد، اختر تجهيزاتك، واجمع فريقك، وانطلق نحو ساحة المعركة! في عالم Free Fire، لا مكان للتردد عندما تبدأ المواجهة. طوّر مهاراتك، وتعلم من كل مباراة، وواصل التقدم نحو هدفك: أن تكون آخر لاعب صامد!
-</p>
-
-<div class="download">
-<h3>🔗 رابط إضافي</h3>
-<p>افتح الرابط الذي أرسلته سابقًا.</p>
-<a class="btn" href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://www.ksal.com/&amp;ved=2ahUKEwjGqZGh9ImXAxUR1wIHHUeVEIgQFnoECCEQAQ&amp;usg=AOvVaw0JHPkd5VHby1Qe7rvzatIv" target="_blank" rel="noopener">
-فتح الرابط
-</a>
-</div>
-
-<p style="text-align:center;font-size:20px;font-weight:bold;color:#ffc857">
-🎮 Abdlh ff — عالم فري فاير بين يديك!
-</p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8541964070571808"
-     crossorigin="anonymous"></script>
-<!-- 5858 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8541964070571808"
-     data-ad-slot="5570482255"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</section>
-
-<div class="download" id="download">
-<h3>📥 حمّل Free Fire الآن!</h3>
-<p>
-هل أنت مستعد للانطلاق في مغامرتك؟ حمّل اللعبة من متجر Google Play الرسمي وابدأ رحلتك في عالم المعارك والتحديات.
-</p>
-<a class="btn" href="https://play.google.com/store/apps/details?id=com.dts.freefireth" target="_blank" rel="noopener">
-📲 تحميل Free Fire من Google Play
-</a>
-</div>
-
-<div class="download" id="youtube">
-<h3>▶️ قناة Abdlh ff على YouTube</h3>
-<p>اشترك في قناتنا على يوتيوب وتابع أحدث الفيديوهات والمحتوى الخاص بفري فاير!</p>
-
-<a class="btn"
-   href="https://youtube.com/channel/UCIjFlfxLyTr1PKHiqt_sTnQ?si=AyTzdFd8EQW9vgT4"
-   target="_blank"
-   rel="noopener">
-  🎬 زيارة قناة اليوتيوب
-</a>
-</div>
-
-<section id="updates">
-<h2>📲 تحديثات فري فاير</h2>
-<div class="card">
-<h3>آخر تحديثات اللعبة</h3>
-<p>
-اكتشف أخبار التحديثات وروابط المصادر الرسمية عند إضافتها إلى الموقع.
-</p>
-<a class="btn" href="https://ff.garena.com/" target="_blank" rel="noopener">
-الموقع الرسمي لفري فاير
-</a>
-</div>
-</section>
-
-<!-- ===== الموضع الإعلاني 3: قبل الفوتر ===== -->
-<div class="ad">
-<div class="ad-label">إعلان</div>
-</div>
-
-<section id="about">
-<h2>ℹ️ حول الموقع</h2>
-<div class="card">
-<p>
-Abdlh ff موقع مستقل لمشاركة أخبار ومعلومات لعبة Free Fire، وغير تابع رسميًا لشركة Garena.
-جميع العلامات التجارية لأصحابها.
-</p>
-</div>
-</section>
-
-<div class="download">
-<h3>🔗 رابط إضافي</h3>
-<p>اضغط هنا لفتح الرابط.</p>
-<a class="btn"
-   href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://www.stml10.com/&amp;ved=2ahUKEwjv57_n-ImXAxX4gP0HHYC2AUYQFnoECCwQAQ&amp;sqi=2&amp;usg=AOvVaw2vDCR2jJ9Hb2wi_uo8mF_C"
-   target="_blank"
-   rel="noopener">
-  🌐 فتح الرابط
-</a>
-</div>
+  <div class="ad"><div class="ad-label">إعلان</div></div>
 
 </main>
 
 <footer>
-© 2026 Abdlh ff — موقع أخبار مستقل لعشاق Free Fire
+  <div class="wrap">
+    <div class="fbrand">🔥 Abdlh ff</div>
+    <div>تابعنا على يوتيوب:
+      <a href="https://youtube.com/channel/UCIjFlfxLyTr1PKHiqt_sTnQ" target="_blank" rel="noopener">قناة Abdlh ff</a>
+    </div>
+    <div style="margin-top:8px">© 2026 Abdlh ff — موقع مستقل، غير تابع لشركة Garena. جميع الحقوق محفوظة.</div>
+  </div>
 </footer>
+
+<div class="toast" id="toast"></div>
 
 <script>
 (function () {
-  var boxes = document.querySelectorAll('.ad');
-  if (!AD_SLOT) {
-    for (var i = 0; i < boxes.length; i++) boxes[i].style.display = 'none';
-    return;
+  'use strict';
+
+  var SITE_URL = 'https://mohainfo200-star.github.io/abdlh-ff48/';
+  var APK_FILE = 'abdlh-ff.apk';
+  var PROJECT = 'abdlh-ff';
+  var API_KEY = 'AIzaSyDNFt4HIzfPFYvbRNTmb2PiCSSMD-0Z1Gc';
+  var FS_BASE = 'https://firestore.googleapis.com/v1/projects/' + PROJECT +
+                '/databases/(default)/documents';
+  var REF_RE = /^[A-Z0-9]{6,12}$/;
+
+  var toastEl = document.getElementById('toast');
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 3200);
   }
-  for (var j = 0; j < boxes.length; j++) {
-    var ins = document.createElement('ins');
-    ins.className = 'adsbygoogle';
-    ins.style.display = 'block';
-    ins.setAttribute('data-ad-client', AD_CLIENT);
-    ins.setAttribute('data-ad-slot', AD_SLOT);
-    ins.setAttribute('data-ad-format', 'auto');
-    ins.setAttribute('data-full-width-responsive', 'true');
-    boxes[j].appendChild(ins);
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
+
+  function safeGet(k) { try { return localStorage.getItem(k) || ''; } catch (e) { return ''; } }
+  function safeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+  var visitorId = safeGet('ffVisitor');
+  if (!visitorId) {
+    visitorId = '';
+    var abc = 'abcdefghijkmnpqrstuvwxyz23456789';
+    for (var i = 0; i < 16; i++) visitorId += abc.charAt(Math.floor(Math.random() * abc.length));
+    safeSet('ffVisitor', visitorId);
   }
+
+  var qs = new URLSearchParams(window.location.search);
+  var refFromUrl = (qs.get('ref') || '').trim().toUpperCase();
+  var refCode = '';
+  if (REF_RE.test(refFromUrl)) {
+    refCode = refFromUrl;
+    safeSet('ffRefCode', refCode);
+    safeSet('ffRefAt', String(Date.now()));
+  } else {
+    var savedCode = (safeGet('ffRefCode') || '').toUpperCase();
+    var savedAt = parseInt(safeGet('ffRefAt') || '0', 10) || 0;
+    if (REF_RE.test(savedCode) && (Date.now() - savedAt) < 30 * 24 * 60 * 60 * 1000) {
+      refCode = savedCode;
+    }
+  }
+
+  var banner = document.getElementById('refBanner');
+  if (refCode) banner.classList.add('show');
+
+  var shareInput = document.getElementById('shareUrl');
+  shareInput.value = SITE_URL + (refCode ? '?ref=' + encodeURIComponent(refCode) : '');
+
+  var statusEl = document.getElementById('statusLine');
+  function setStatus(text, kind) {
+    statusEl.textContent = text || '';
+    statusEl.className = 'status-line' + (kind ? ' ' + kind : '');
+  }
+
+  function copyText(txt) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(txt);
+    }
+    return new Promise(function (resolve, reject) {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = txt;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        ok ? resolve() : reject(new Error('copy failed'));
+      } catch (e) { reject(e); }
+    });
+  }
+
+  document.getElementById('copyBtn').addEventListener('click', function () {
+    copyText(shareInput.value).then(function () {
+      toast('📋 تم نسخ رابط التحميل!');
+    }).catch(function () {
+      shareInput.select();
+      toast('اختر الرابط وانسخه يدوياً');
+    });
+  });
+
+  function timeout(promise, ms) {
+    return Promise.race([
+      promise,
+      new Promise(function (_, reject) { setTimeout(function () { reject(new Error('timeout')); }, ms); })
+    ]);
+  }
+
+  function getReferrerUid(code) {
+    var url = FS_BASE + '/refs/' + encodeURIComponent(code) + '?key=' + encodeURIComponent(API_KEY);
+    return fetch(url, { method: 'GET', cache: 'no-store' }).then(function (res) {
+      if (res.status === 404) throw new Error('bad-ref');
+      if (!res.ok) throw new Error('ref-lookup-' + res.status);
+      return res.json();
+    }).then(function (doc) {
+      var uid = doc && doc.fields && doc.fields.uid && doc.fields.uid.stringValue;
+      if (!uid) throw new Error('bad-ref');
+      return uid;
+    });
+  }
+
+  function createRefClick(code, uid) {
+    var docId = 'c_' + code + '_' + visitorId;
+    var docName = 'projects/' + PROJECT + '/databases/(default)/documents/refClicks/' + docId;
+    var body = {
+      writes: [{
+        update: {
+          name: docName,
+          fields: {
+            code: { stringValue: code },
+            uid: { stringValue: uid },
+            ua: { stringValue: (navigator.userAgent || '').slice(0, 250) },
+            claimed: { booleanValue: false }
+          }
+        },
+        updateTransforms: [{ fieldPath: 'at', setToServerValue: 'REQUEST_TIME' }],
+        currentDocument: { exists: false }
+      }]
+    };
+    return fetch(FS_BASE + ':commit?key=' + encodeURIComponent(API_KEY), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+      keepalive: true
+    }).then(function (res) {
+      if (res.ok) return true;
+      if (res.status === 409) return true;
+      return res.text().then(function (txt) {
+        if (txt && txt.indexOf('ALREADY_EXISTS') >= 0) return true;
+        throw new Error('commit-' + res.status);
+      });
+    });
+  }
+
+  function recordReferral(code) {
+    if (safeGet('ffRefSent_' + code) === '1') return Promise.resolve('already');
+    return timeout(getReferrerUid(code), 2500)
+      .then(function (uid) { return timeout(createRefClick(code, uid), 3000); })
+      .then(function () {
+        safeSet('ffRefSent_' + code, '1');
+        setStatus('✅ تم تسجيل الدعوة — صاحب الرابط سيحصل على 5 نقاط عند فتح التطبيق.', '');
+        return 'ok';
+      });
+  }
+
+  function beginDownload(ev) {
+    if (ev) ev.preventDefault();
+    var btns = [document.getElementById('downloadMain'), document.getElementById('downloadHero')];
+    btns.forEach(function (b) { if (b) { b.dataset.old = b.textContent; b.textContent = '⏳ جاري تجهيز التحميل...'; b.style.pointerEvents = 'none'; } });
+
+    function go() {
+      window.location.href = APK_FILE;
+      setTimeout(function () {
+        btns.forEach(function (b) { if (b) { b.textContent = b.dataset.old; b.style.pointerEvents = ''; } });
+      }, 4500);
+    }
+
+    if (!refCode) {
+      setStatus('📥 التحميل سيبدأ الآن...', 'info');
+      go();
+      return;
+    }
+
+    setStatus('⏳ جاري تسجيل الإحالة...', 'info');
+    recordReferral(refCode).then(function (r) {
+      if (r === 'already') setStatus('📥 التحميل سيبدأ الآن...', 'info');
+      go();
+    }).catch(function (err) {
+      var msg = String(err && err.message || err);
+      if (msg.indexOf('bad-ref') >= 0) {
+        setStatus('⚠️ كود الإحالة غير صالح — سيبدأ التحميل بدون نقاط.', 'err');
+      } else {
+        setStatus('⚠️ تعذّر تسجيل الإحالة الآن — سيبدأ التحميل عادةً.', 'err');
+      }
+      go();
+    });
+  }
+
+  document.getElementById('downloadMain').addEventListener('click', beginDownload);
+  document.getElementById('downloadHero').addEventListener('click', beginDownload);
+
+  // AdSense
+  (function () {
+    var boxes = document.querySelectorAll('.ad');
+    if (!AD_SLOT && !AD_SLOT_MX) {
+      for (var i = 0; i < boxes.length; i++) boxes[i].style.display = 'none';
+      return;
+    }
+    for (var j = 0; j < boxes.length; j++) {
+      var last = (j === boxes.length - 1);
+      var slot = (last && AD_SLOT_MX) ? AD_SLOT_MX : AD_SLOT;
+      if (!slot) { boxes[j].style.display = 'none'; continue; }
+      var ins = document.createElement('ins');
+      ins.className = 'adsbygoogle';
+      ins.style.display = 'block';
+      ins.setAttribute('data-ad-client', AD_CLIENT);
+      ins.setAttribute('data-ad-slot', slot);
+      if (last && AD_SLOT_MX) {
+        ins.setAttribute('data-ad-format', 'autorelaxed');
+      } else {
+        ins.setAttribute('data-ad-format', 'auto');
+        ins.setAttribute('data-full-width-responsive', 'true');
+      }
+      boxes[j].appendChild(ins);
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  })();
 })();
 </script>
 
