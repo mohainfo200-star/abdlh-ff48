@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohainfo200-star.github.io/abdlh-ff48/sitemap.xml
